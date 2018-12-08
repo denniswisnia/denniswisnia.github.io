@@ -395,7 +395,10 @@ nav ul li a {
   text-transform: uppercase;
   display: block;
 }
-
+.services-block:hover {
+  background-color: #535353;
+  color: white;
+}
 .services-block .separator {
   margin: 0;
   font-size: 13px;
