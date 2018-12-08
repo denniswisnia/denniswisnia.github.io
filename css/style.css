@@ -397,6 +397,7 @@ nav ul li a {
 }
 .services-block:hover {
   background-color: #f7f7f7;
+  color: black;
 }
 .services-block .separator {
   margin: 0;
