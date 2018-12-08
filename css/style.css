@@ -291,6 +291,13 @@ nav ul li a {
 /*-----------------------------------------------------------------------------------*/
 /*  Aout-us
 /*-----------------------------------------------------------------------------------*/
+#exhibition .div-img-bg .exhibition-img img {
+  width: 100%;
+  box-shadow: 0px 0px 85px 0px rgba(0, 0, 0, 0.14);
+  margin-top: -60px;
+  margin-left: 40px;
+  object-fit: cover;
+}
 
 #about {
   width: 100%;
