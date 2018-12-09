@@ -351,14 +351,15 @@ nav ul li a {
 }
 
 #exhibition .div-img-bg {
+  padding-bottom: 30px;
   border: 10px solid #000000;
-  width: 120%;
 }
 
 #exhibition .div-img-bg .exhibition-img img {
   width: 100%;
   box-shadow: 0px 0px 85px 0px rgba(0, 0, 0, 0.14);
-  width: 100%;
+  margin-top: -60px;
+  margin-left: 40px;
   object-fit: cover;
 }
 
@@ -372,13 +373,6 @@ nav ul li a {
   max-width: 80%;
   margin-bottom: 0;
   text-align: left;
-}
-#exhibition .exhibition-descr .separator-heading {
-  max-width: 80%;
-  margin-bottom: 0;
-  text-align: left;
-  font-weight: bold;
-  color: black;
 }
 /*-----------------------------------------------------------------------------------*/
 /*   Services
