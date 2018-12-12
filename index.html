@@ -47,6 +47,40 @@
 <div id="preloader">
     <div id="status">&nbsp;</div>
 </div>
+<div class="hidden">
+    <script type="text/javascript">
+      <!--//--><![CDATA[//><!--
+        var images = new Array()
+        function preload() {
+          for (i = 0; i < preload.arguments.length; i++) {
+            images[i] = new Image()
+            images[i].src = preload.arguments[i]
+          }
+        }
+        preload(
+      'Lucky Gallery artwork/Brad Robson_Berlin Influencers, David Bowie_oil on canvas_80 x 80.jpg',
+      'Lucky Gallery artwork/Brad Robson_Berlin Influencers, Marlene Dietrich_oil on canvas_80 x 80.jpg',
+      'Lucky Gallery artwork/Brad Robson_Berlin Influencers, Nick Cave_oil on canvas_80 x 80.jpg',
+      'Lucky Gallery artwork/Brad Robson_Print1.jpg',
+      'Lucky Gallery artwork/Brad Robson_Print2.jpeg',
+      'Lucky Gallery artwork/Brad Robson_Print3.jpeg',
+      'Lucky Gallery artwork/Brad Robson_Print4_60W x 85H.jpeg',
+      'Lucky Gallery artwork/Dennis Wisnia_Bild1.jpg',
+      'Lucky Gallery artwork/Dennis Wisnia_Bild2.jpg',
+      'Lucky Gallery artwork/Robin Slonina_BE Patient_acrylic and mixed media on paper_50W x 70H.jpg',
+      'Lucky Gallery artwork/Robin Slonina_BE Greatful_acrylic on canvas and mixed media_120W x 160H.jpg',
+      'Lucky Gallery artwork/Robin Slonina_BE Persistent_acrylic and mixed media on paper_50W x 70H.jpg',
+      'Lucky Gallery artwork/Virut Panchabuse_African Boy_Collage_120W x 170H.jpg',
+      'Lucky Gallery artwork/Virut Panchabuse_Future Fashion_Collage_150W x 200H.jpg',
+      'Lucky Gallery artwork/Virut Panchabuse_Old Working Man_Collage_140W x 200H.jpg',
+      'Lucky Gallery artwork/Raphael Saulneron_ALI BRAND_Print on Plexiglas_60W x 90H.jpg',
+      'Lucky Gallery artwork/Raphael Saulneron_Basquiat dans atelier_Print on Plexiglas_60W x 40H.jpg',
+      'Lucky Gallery artwork/Raphael Saulneron_KATY BRAND_Print on Plexiglas_60W x 90H.jpg',
+      'Lucky Gallery artwork/Raphael Saulneron_ROLLING STREET_Print on Plexiglas_90W x 60H.jpg',
+      )
+      //--><!]]>
+    </script>
+  </div>
   <!-- start section navbar -->
   <nav id="main-nav">
     <div class="row">
@@ -487,38 +521,7 @@
             $('body').delay(350).css({'overflow':'visible'});
           })
     //]]>
-    function preload(arrayOfImages) {
-    $(arrayOfImages).each(function(){
-        $('<img/>')[0].src = this;
-        // Alternatively you could use:
-        // (new Image()).src = this;
-    });
-    }
 
-    // Usage:
-
-    preload([
-    'Lucky Gallery artwork/Brad Robson_Berlin Influencers, David Bowie_oil on canvas_80 x 80.jpg',
-    'Lucky Gallery artwork/Brad Robson_Berlin Influencers, Marlene Dietrich_oil on canvas_80 x 80.jpg',
-    'Lucky Gallery artwork/Brad Robson_Berlin Influencers, Nick Cave_oil on canvas_80 x 80.jpg',
-    'Lucky Gallery artwork/Brad Robson_Print1.jpg',
-    'Lucky Gallery artwork/Brad Robson_Print2.jpeg',
-    'Lucky Gallery artwork/Brad Robson_Print3.jpeg',
-    'Lucky Gallery artwork/Brad Robson_Print4_60W x 85H.jpeg',
-    'Lucky Gallery artwork/Dennis Wisnia_Bild1.jpg',
-    'Lucky Gallery artwork/Dennis Wisnia_Bild2.jpg',
-    'Lucky Gallery artwork/Robin Slonina_BE Patient_acrylic and mixed media on paper_50W x 70H.jpg',
-    'Lucky Gallery artwork/Robin Slonina_BE Greatful_acrylic on canvas and mixed media_120W x 160H.jpg',
-    'Lucky Gallery artwork/Robin Slonina_BE Persistent_acrylic and mixed media on paper_50W x 70H.jpg',
-    'Lucky Gallery artwork/Virut Panchabuse_African Boy_Collage_120W x 170H.jpg',
-    'Lucky Gallery artwork/Virut Panchabuse_Future Fashion_Collage_150W x 200H.jpg',
-    'Lucky Gallery artwork/Virut Panchabuse_Old Working Man_Collage_140W x 200H.jpg',
-    'Lucky Gallery artwork/Raphael Saulneron_ALI BRAND_Print on Plexiglas_60W x 90H.jpg',
-    'Lucky Gallery artwork/Raphael Saulneron_Basquiat dans atelier_Print on Plexiglas_60W x 40H.jpg',
-    'Lucky Gallery artwork/Raphael Saulneron_KATY BRAND_Print on Plexiglas_60W x 90H.jpg',
-    'Lucky Gallery artwork/Raphael Saulneron_ROLLING STREET_Print on Plexiglas_90W x 60H.jpg',
-    ]);
-      </script>
 </body>
 
 </html>
