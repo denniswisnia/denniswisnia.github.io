@@ -43,7 +43,10 @@
 </head>
 
 <body>
-
+<!-- Preloader -->
+<div id="preloader">
+    <div id="status">&nbsp;</div>
+</div>
   <!-- start section navbar -->
   <nav id="main-nav">
     <div class="row">
@@ -94,13 +97,14 @@
           <div class="col-lg-7">
             <div class="exhibition-descr">
               <p class="p-heading">Upcoming Exhibitions</p>
-              <p class="seperator-heading">15.12.2018 - 28.02.2019 - NHOW HOTEL BERLIN</p>
+              <p class="seperator-heading">15.12.2018 - 28.02.2019 - <a href="https://www.nhow-berlin.com/">NHOW HOTEL BERLIN</a></p>
               <p class="seperator"></p>
               <p class="seperator">
                 <address>
                   NHOW BERLIN</br>
                   Stralauer Allee 3</br>
-                  10245 - Berlin</address></p>
+                  10245 - Berlin</br></address>
+                  <a href="https://www.nhow-berlin.com/">https://www.nhow-berlin.com/</a></p>
               <p class="p-heading">Past Exhibitions</p>
               <p class="seperator-heading">1.9.2018 - 30.9.2018 - BERLIN MITTE</p>
               <p class="seperator-heading">proud partner of Urban Art Week 2018</p>
@@ -481,7 +485,16 @@
 
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
-
+  <!-- Preloader -->
+  <script type="text/javascript">
+    //<![CDATA[
+        $(window).on('load', function() { // makes sure the whole site is loaded 
+            $('#status').fadeOut(); // will first fade out the loading animation 
+            $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website. 
+            $('body').delay(350).css({'overflow':'visible'});
+          })
+    //]]>
+  </script>
 </body>
 
 </html>
