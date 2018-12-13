@@ -450,11 +450,15 @@
   <script src="lib/jquery/jquery.min.js"></script>
   <script src="lib/jquery/jquery-migrate.min.js"></script>
   <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-
   <script src="lib/typed/typed.js"></script>
   <script src="lib/owlcarousel/owl.carousel.min.js"></script>
   <script src="lib/magnific-popup/magnific-popup.min.js"></script>
+    <script type="text/javascript">
+    $.getScript("lib/magnific-popup/magnific-popup.min.js", function(){
+      alert("Script loaded and executed.");
+      // here you can use anything you defined in the loaded script
+      });
+  </script>
   <script type="text/javascript">
     $(document).ready(function() {
 
@@ -487,7 +491,7 @@
             $('body').delay(350).css({'overflow':'visible'});
           })
     //]]>
-
+  </script>
 </body>
 
 </html>
