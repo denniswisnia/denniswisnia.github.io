@@ -50,8 +50,8 @@ $(document).ready(function() {
   //  //NAVBAR SHOW - HIDE
   // ========================================================================= //
   window.onload = function() {
-    $("#main-nav, #main-nav-subpage").slideDown(200);
-    $("#main-nav-subpage").removeClass('subpage-nav');
+    // $("#main-nav, #main-nav-subpage").slideDown(200);
+    // $("#main-nav-subpage").removeClass('subpage-nav');
   };
 
 

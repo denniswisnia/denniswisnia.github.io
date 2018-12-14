@@ -106,11 +106,14 @@
                   Stralauer Allee 3</br>
                   10245 - Berlin</br></address>
                   <a href="https://www.nhow-berlin.com/">https://www.nhow-berlin.com/</a></p>
+                  <p class="seperator"></p>
+                  <p class="seperator"></p>
               <p class="p-heading">Past Exhibitions</p>
               <p class="seperator-heading">1.9.2018 - 30.9.2018 - BERLIN MITTE</p>
-              <p class="seperator-heading">proud partner of Urban Art Week 2018</p>
+              <p class="seperator">proud partner of Urban Art Week 2018</p>
               <p class="seperator"></p>
           </div>
+
         </div>
       </div>
     </div>
@@ -168,10 +171,10 @@
         <div class="col-lg-7">
           <div class="about-descr">
             <p class="p-heading">Who the f*** is Lucky?</p>
-            Nathalie Crivelli (born in Zurich, 1984) speaks five languages, has a Magna-Cum-Laude Bachelor in Corporate Communication and a Summa-Cum-Laude Master in Management.<br>
+            <p class="separator">Nathalie Crivelli (born in Zurich, 1984) speaks five languages, has a Magna-Cum-Laude Bachelor in Corporate Communication and a Summa-Cum-Laude Master in Management.<br>
             After work experience in the fields of event-management and finance in her home country Switzerland, she entered the art scene as a nude art model and muse in 2014. Known under the stage name LUCKY, she has been living in Berlin since 2016. In this context, the idea of applying her communication and managerial skills by promoting and selling artwork of her fellow artists was born.<br>
             At the Freie Universität Berlin, she hence attended courses in art history followed by a further education in art market management.<br>
-            In 2018, she started her own business as an art dealer. Her concept focuses on pop-up exhibitions and Instagram marketing.<br>
+            In 2018, she started her own business as an art dealer. Her concept focuses on pop-up exhibitions and Instagram marketing.<br></p>
             </div>
 
         </div>
@@ -474,7 +477,7 @@
   <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="lib/typed/typed.js"></script>
   <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-  <script src="lib/magnific-popup/magnific-popup.min.js"></script>
+  
   <script type="text/javascript">
     $(document).ready(function() {
 
@@ -505,9 +508,12 @@
             $('#status').fadeOut(); // will first fade out the loading animation 
             $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website. 
             $('body').delay(350).css({'overflow':'visible'});
+            $("#main-nav, #main-nav-subpage").slideDown(200);
+            $("#main-nav-subpage").removeClass('subpage-nav');
           })
     //]]>
   </script>
+  <script src="lib/magnific-popup/magnific-popup.min.js"></script>
 </body>
 
 </html>
