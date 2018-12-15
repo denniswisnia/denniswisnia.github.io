@@ -115,6 +115,10 @@ p {
   line-height: 28px;
 }
 
+img-responsive {
+  width: 100%;
+}
+
 ::-moz-selection {
   background: #999999;
   color: #fff;
